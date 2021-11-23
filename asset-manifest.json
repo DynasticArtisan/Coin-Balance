@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Coin-Balance/static/css/main.b1075d2f.chunk.css",
+    "main.js": "/Coin-Balance/static/js/main.7910d996.chunk.js",
+    "main.js.map": "/Coin-Balance/static/js/main.7910d996.chunk.js.map",
+    "runtime-main.js": "/Coin-Balance/static/js/runtime-main.b6abeb3d.js",
+    "runtime-main.js.map": "/Coin-Balance/static/js/runtime-main.b6abeb3d.js.map",
+    "static/js/2.30e6a7ea.chunk.js": "/Coin-Balance/static/js/2.30e6a7ea.chunk.js",
+    "static/js/2.30e6a7ea.chunk.js.map": "/Coin-Balance/static/js/2.30e6a7ea.chunk.js.map",
+    "index.html": "/Coin-Balance/index.html",
+    "static/css/main.b1075d2f.chunk.css.map": "/Coin-Balance/static/css/main.b1075d2f.chunk.css.map",
+    "static/js/2.30e6a7ea.chunk.js.LICENSE.txt": "/Coin-Balance/static/js/2.30e6a7ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6abeb3d.js",
+    "static/js/2.30e6a7ea.chunk.js",
+    "static/css/main.b1075d2f.chunk.css",
+    "static/js/main.7910d996.chunk.js"
+  ]
+}
