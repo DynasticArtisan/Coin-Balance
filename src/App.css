@@ -1,38 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  background-color: gray;
+  background-image: url("https://wallpaperaccess.com/full/1267587.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+.form {
+  border-radius: 10px;
+  padding: 1.5em 2em;
+  margin-top: 40vh;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.form__select {
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border: none;
+  background-color: rgb(241, 246, 252);
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form__address {
+  flex-grow: 1;
+  padding: 0.5em 0.5em;
+  font-size: 1.2em;
+  border: none;
+}
+
+.form__submit {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background-color: rgb(185, 215, 250);
+  font-size: 1.2em;
+  border: none;
+}
+
+.wallets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin: 50px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  color: #eee;
+}
+.wallets table {
+  width: 100%;
+}
+.wallets td {
+  padding: 5px;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+}
+
+.error {
+  position: absolute;
+  padding: 15px 25px;
+  top: 25vh;
+  font-size: 1.2em;
+  color: #eee;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.download {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: rgb(239, 239, 239);
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+/*                               loader                               */
+.loader {
+  position: absolute;
+  top: 25vh;
+}
+.css-loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.css-loader div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: rgba(207, 241, 255, 0.849);
+  animation: loader 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.css-loader div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.css-loader div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.css-loader div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes loader {
+  0% {
+    top: 8px;
+    height: 64px;
   }
-  to {
-    transform: rotate(360deg);
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
   }
 }
