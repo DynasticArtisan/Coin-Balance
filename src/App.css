@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .App {
   min-height: 100vh;
   background-color: gray;
@@ -13,7 +12,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -23,7 +21,6 @@
   align-items: center;
   position: relative;
 }
-
 .form {
   border-radius: 10px;
   padding: 1.5em 2em;
@@ -34,7 +31,6 @@
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
 }
-
 .form__select {
   padding: 0.5em 0.5em;
   font-size: 1.2em;
@@ -42,14 +38,12 @@
   background-color: rgb(241, 246, 252);
   cursor: pointer;
 }
-
 .form__address {
   flex-grow: 1;
   padding: 0.5em 0.5em;
   font-size: 1.2em;
   border: none;
 }
-
 .form__submit {
   padding: 0.5em 1em;
   cursor: pointer;
@@ -57,7 +51,6 @@
   font-size: 1.2em;
   border: none;
 }
-
 .wallets {
   display: flex;
   flex-direction: column;
@@ -78,7 +71,6 @@
   text-overflow: ellipsis;
   font-size: 0.8em;
 }
-
 .error {
   position: absolute;
   padding: 15px 25px;
